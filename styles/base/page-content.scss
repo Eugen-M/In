@@ -1,0 +1,25 @@
+.page-container {
+    &__main {
+        width: 100%;
+        margin: 0 auto;
+        background: #ffffff;
+        min-height: 100%;
+        position: relative;
+    }
+
+    &__wrap {
+        max-width: 1186px;
+        min-width: 320px;
+        padding: 0 20px 1px;
+        margin: 0 auto;
+    }
+}
+
+/* media */
+@media (max-width: 767px) {
+    .page-container {
+        &__main {
+            background: #fff;
+        }
+    }
+}
