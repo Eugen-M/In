@@ -16,9 +16,9 @@
         padding: 12px 0;
         position: relative;
         max-width: 1146px;
-        min-width: 320px;
+        min-width: 280px;
         margin: 0 auto;
-        min-height: 86px;
+        height: 86px;
         border-bottom: 1px solid rgba(249, 247, 246, 0.1);
     }
 
@@ -69,21 +69,6 @@
                 width: 22px;
                 height: 22px;
                 margin-top: -11px;
-            }
-
-            &_arrow {
-                padding-right: 21px;
-
-                &::after {
-                    content: "";
-                    position: absolute;
-                    right: 0;
-                    top: 50%;
-                    width: 10px;
-                    height: 6px;
-                    margin-top: -3px;
-                    background: url("data:image/svg+xml,%3Csvg width='9' height='5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M.959.583l3.542 3.542L8.042.583H.96z' fill='%23EBEBF2'/%3E%3C/svg%3E") center no-repeat;
-                }
             }
 
             &_category::before {
@@ -329,7 +314,7 @@
 @media (max-width: 768px) {
     .page-header {
         &__wrap {
-            min-height: 62px;
+            height: 62px;
         }
 
         &__user {

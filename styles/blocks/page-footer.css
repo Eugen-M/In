@@ -105,9 +105,9 @@
   font-family: 'Inter', sans-serif;
 }
 .page-footer__btn:hover {
-  color: #62A824;
+  color: #ffffff;
   text-decoration: none;
-  background: #fff;
+  background: #62A824;
 }
 .page-footer__copyright {
   line-height: 1.6;

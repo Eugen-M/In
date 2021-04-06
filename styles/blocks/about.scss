@@ -61,6 +61,13 @@
         font-family: 'Inter', sans-serif;
         box-shadow: 4px 12px 24px rgba(98, 168, 36, 0.05);
         border-radius: 50px;
+
+        &:hover {
+            background: #62A824;
+            border-color: #62A824;
+            color: #fff;
+            text-decoration: none;
+        }
     }
 }
 

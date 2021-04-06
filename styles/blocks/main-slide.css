@@ -237,6 +237,12 @@
             flex: 0 0 100%;
     max-width: 100%;
   }
+  .main-slide__box::before {
+    width: 38px;
+    height: 83px;
+    background-size: cover;
+    right: -15px;
+  }
   .main-slide__box::after {
     width: 24px;
     height: 24px;
@@ -259,5 +265,8 @@
   }
   .main-slide__quote {
     margin-bottom: 14px;
+  }
+  .main-slide__text {
+    width: 100%;
   }
 }
