@@ -51,11 +51,11 @@
   height: auto;
 }
 .about__btn {
-  border: 1px solid #F6F6F9;
+  border: 1px solid #62A824;
   display: inline-block;
   vertical-align: middle;
   padding: 17px 37px 18px;
-  color: #62A824;
+  color: #fff;
   font-size: 16px;
   line-height: 1.2;
   font-weight: bold;
@@ -63,11 +63,9 @@
   -webkit-box-shadow: 4px 12px 24px rgba(98, 168, 36, 0.05);
           box-shadow: 4px 12px 24px rgba(98, 168, 36, 0.05);
   border-radius: 50px;
+  background: #62A824;
 }
 .about__btn:hover {
-  background: #62A824;
-  border-color: #62A824;
-  color: #fff;
   text-decoration: none;
 }
 
