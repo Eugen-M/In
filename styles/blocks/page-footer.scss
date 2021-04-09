@@ -95,11 +95,12 @@
         color: #ffffff;
         line-height: 1.2;
         font-family: 'Inter', sans-serif;
+        border: 1px solid #62A824;
 
         &:hover {
-            color: #ffffff;
+            color: #62A824;
             text-decoration: none;
-            background: #62A824;
+            background: none;
         }
     }
 
@@ -129,7 +130,7 @@
         &-title {
             letter-spacing: 1px;
             text-transform: uppercase;
-            color: #57586B;
+            color: #fff;
             font-family: 'Manrope', sans-serif;
             font-size: 14px;
             line-height: 1.6;
@@ -139,7 +140,7 @@
         }
 
         &-link {
-            color: #fff;
+            color: #57586B;
             font-size: 14px;
             line-height: 1.4;
             position: relative;
@@ -155,7 +156,7 @@
         &-label {
             letter-spacing: 1px;
             text-transform: uppercase;
-            color: #57586B;
+            color: #ffffff;
             font-family: 'Manrope', sans-serif;
             font-size: 14px;
             line-height: 1.6;
@@ -173,7 +174,7 @@
             font-family: 'Inter', sans-serif;
             border: 1px solid #57586B;
             border-radius: 3px;
-            background: url("data:image/svg+xml,%3Csvg width='16' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0H2C1.175 0 .507.675.507 1.5l-.007 9c0 .825.675 1.5 1.5 1.5h12c.825 0 1.5-.675 1.5-1.5v-9C15.5.675 14.825 0 14 0zm0 3L8 6.75 2 3V1.5l6 3.75 6-3.75V3z' fill='%23fff'/%3E%3C/svg%3E") 13px center no-repeat;
+            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE0IDBIMkMxLjE3NSAwIDAuNTA3NSAwLjY3NSAwLjUwNzUgMS41TDAuNSAxMC41QzAuNSAxMS4zMjUgMS4xNzUgMTIgMiAxMkgxNEMxNC44MjUgMTIgMTUuNSAxMS4zMjUgMTUuNSAxMC41VjEuNUMxNS41IDAuNjc1IDE0LjgyNSAwIDE0IDBaTTE0IDNMOCA2Ljc1TDIgM1YxLjVMOCA1LjI1TDE0IDEuNVYzWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==') 13px center no-repeat;
             margin-bottom: 12px;
         }
 
@@ -194,18 +195,64 @@
         }
 
         &-btn {
-            background: #FFFFFF;
+            background: #0F122E;
             border-radius: 4px;
             font-size: 14px;
             font-weight: bold;
-            color: #0F122E;
+            color: #ffffff;
             line-height: 1.43;
             font-family: 'Manrope', sans-serif;
             width: 100%;
             cursor: pointer;
             display: block;
-            border: none;
+            border: 1px solid #ffffff;
             padding: 10px;
+            transition: all .5s ease-in-out;
+
+            &:hover {
+                color: #0F122E;
+                background: #ffffff;
+            }
+        }
+    }
+
+    &__alphabet {
+        margin-bottom: 20px;
+
+        &-title {
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: #fff;
+            font-family: 'Manrope', sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            display: block;
+            font-weight: 800;
+            padding-bottom: 3px;
+            margin-bottom: 11px;
+        }
+
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        &-item {
+            margin: 0 8px 5px 0;
+        }
+
+        &-link {
+            color: #57586B;
+            font-size: 14px;
+            line-height: 1.4;
+            position: relative;
+            text-transform: uppercase;
+
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+            }
         }
     }
 }
@@ -321,6 +368,14 @@
             }
         }
 
+        &__alphabet {
+            &-title {
+                font-size: 12px;
+                line-height: 1.3;
+                padding-bottom: 1px;
+            }
+        }
+
         &__subscr {
             width: 210px;
             margin: 0 auto;
@@ -352,6 +407,16 @@
                 max-width: 100%;
                 text-align: center;
                 margin-bottom: 29px;
+            }
+        }
+
+        &__alphabet {
+            &-title {
+                text-align: center;
+            }
+
+            &-list {
+                justify-content: center;
             }
         }
     }

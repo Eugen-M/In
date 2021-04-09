@@ -13,34 +13,32 @@
   <body>
     <div class="page-container__main">
       <header class="page-header page-header_absolute">
+        <div class="page-header__overlay"></div>
         <div class="page-header__wrap">
           <div class="page-header__btn"><span class="page-header__btn-line"></span><span class="page-header__btn-line"></span><span class="page-header__btn-line"></span><span class="page-header__btn-line"></span></div>
           <div class="page-header__column">       <a class="page-header__logo" href="#"><img class="page-header__logo-img" src="i/logo.svg" alt="logo"><img class="page-header__logo-slogan" src="i/slogan.svg" alt="logo"></a>
-            <div class="page-header__search">
-              <form class="page-header__search-wrap" method="POST" action="">
-                <button class="page-header__search-btn" type="submit"></button>
-                <input class="page-header__search-input" type="text" placeholder="Search here ...">
-              </form>
+            <div class="page-header__search"><span class="page-header__search-btn" type="submit"></span>
+              <div class="page-header__search-ins">
+                <form class="page-header__search-wrap" method="POST" action="">
+                  <button class="page-header__search-submit" type="submit"></button>
+                  <input class="page-header__search-input" type="text" placeholder="Search here...">
+                </form>
+              </div>
             </div>
           </div>
           <ul class="page-header__menu page-header__menu_row">
             <li class="page-header__menu-item"><a class="page-header__menu-link page-header__menu-link_category" href="">Categories</a></li>
-            <li class="page-header__menu-item"><a class="page-header__menu-link page-header__menu-link_submit" href="">Submit a Complaint</a></li>
             <li class="page-header__menu-item"><a class="page-header__menu-link page-header__menu-link_faq" href="">FAQ’s</a></li>
+            <li class="page-header__menu-item"><a class="page-header__menu-link page-header__menu-link_signin" href="">Sign In</a></li>
           </ul>
-          <div class="page-header__user"><a class="page-header__user-signin" href="#">Sign In</a></div>
+          <div class="page-header__user"><a class="page-header__user-submit" href="#">Submit a Complaint</a></div>
         </div>
-        <div class="page-header__mob-dropdown">   
-          <div class="page-header__search page-header__search_bg">
-            <form class="page-header__search-wrap" method="POST" action="">
-              <button class="page-header__search-btn" type="submit"></button>
-              <input class="page-header__search-input" type="text" placeholder="Search here ...">
-            </form>
-          </div>
+        <div class="page-header__mob-dropdown">
           <ul class="page-header__menu">
-            <li class="page-header__menu-item"><a class="page-header__menu-link page-header__menu-link_category" href="">Categories</a></li>
             <li class="page-header__menu-item"><a class="page-header__menu-link page-header__menu-link_submit" href="">Submit a Complaint</a></li>
+            <li class="page-header__menu-item"><a class="page-header__menu-link page-header__menu-link_category" href="">Categories</a></li>
             <li class="page-header__menu-item"><a class="page-header__menu-link page-header__menu-link_faq" href="">FAQ’s</a></li>
+            <li class="page-header__menu-item"><a class="page-header__menu-link page-header__menu-link_signin" href="">Sign In</a></li>
           </ul>
         </div>
       </header>
@@ -50,7 +48,7 @@
             <div class="main-slide__column">
               <div class="main-slide__subtitle">About us</div>
               <h1 class="main-slide__title">At ConsumerComplaints.in we want to make sure you <span class="main-slide__title-active">get your voice heard</span></h1>
-              <div class="main-slide__text">Ripped off by a dubious employee? Refused a refund by an unscrupulous online business? Treated poorly and humiliated by a cashier?</div><a class="main-slide__btn" href="">Submit a Complaints</a>
+              <div class="main-slide__text">Ripped off by a dubious employee? Refused a refund by an unscrupulous online business? Treated poorly and humiliated by a cashier?</div><a class="main-slide__btn" href="">Submit a Complaint</a>
             </div>
             <div class="main-slide__box">
               <div class="main-slide__box-wrap"><img class="main-slide__img" src="i/main-slide-photo.jpg" alt=""><span class="main-slide__box-dot"></span></div>
@@ -132,8 +130,8 @@
       <div class="page-container__wrap">
         <section class="works">
           <div class="works__box">
-            <h4 class="works__title">how we works</h4>
-            <div class="works__text">“Customers who want to get a head start in solving their complaint can do so by registering on our website. The process is simple, easy, and only requires a few minutes of your time. You can start by browsing through complaints made on other companies or adding comments under other customers’ complaints. Once you are ready to write your own review, you can do so by clicking ‘Submit a Complaint’ and adding more information. Afterwards, a company representative will contact you shortly to get more details and solve the problem.”</div>
+            <h4 class="works__title">how we work</h4>
+            <div class="works__text">Customers who want to get a head start in solving their complaint can do so by registering on our website. The process is simple, easy, and only requires a few minutes of your time. You can start by browsing through complaints made on other companies or adding comments under other customers’ complaints. Once you are ready to write your own review, you can do so by clicking ‘Submit a Complaint’ and adding more information. Afterwards, a company representative will contact you shortly to get more details and solve the problem.</div>
           </div>
         </section>
       </div>
@@ -182,12 +180,44 @@
         <div class="page-footer__ins">
           <div class="page-footer__top">
             <div class="page-footer__wrap">
-              <div class="page-footer__text">Get a fast response from<br /> every compaints that you post.</div><a class="page-footer__btn" href="#">Register Now</a>
+              <div class="page-footer__text">Get a fast response from<br /> every compaints that you post</div><a class="page-footer__btn" href="#">Submit a Complaint</a>
             </div>
           </div>
           <div class="page-footer__center">
             <div class="page-footer__column-left"><a class="page-footer__logo" href="#"><img class="page-footer__logo-img" src="i/footer-logo.svg" alt="logo"></a>
               <div class="page-footer__descr">ConsumerComplaints.in is a consumer complaints platform where buyers can write a complaint against the company with which they had a negative experience.</div>
+              <div class="page-footer__alphabet">
+                <div class="page-footer__alphabet-title">Business directory</div>
+                <ul class="page-footer__alphabet-list">
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">a</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">b</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">c</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">d</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">e</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">f</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">g</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">h</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">i</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">j</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">k</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">l</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">m</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">n</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">o</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">p</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">q</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">r</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">s</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">t</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">u</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">v</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">w</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">x</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">y</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">z</a></li>
+                  <li class="page-footer__alphabet-item"><a class="page-footer__alphabet-link" href="">0-9</a></li>
+                </ul>
+              </div>
             </div>
             <div class="page-footer__column-center">
               <div class="page-footer__navi">
@@ -197,7 +227,6 @@
                   <li class="page-footer__navi-item"><a class="page-footer__navi-link" href="#">Submit Complains</a></li>
                   <li class="page-footer__navi-item"><a class="page-footer__navi-link" href="#">Categories</a></li>
                   <li class="page-footer__navi-item"><a class="page-footer__navi-link" href="#">Lates Complaints</a></li>
-                  <li class="page-footer__navi-item"><a class="page-footer__navi-link" href="#">Categories</a></li>
                 </ul>
                 <ul class="page-footer__navi-list">
                   <li class="page-footer__navi-item"><span class="page-footer__navi-title">additional</span></li>

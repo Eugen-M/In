@@ -120,6 +120,7 @@
 
     &__btn {
         background: #FFA205;
+        border: 1px solid #FFA205;
         border-radius: 60px;
         display: inline-block;
         vertical-align: middle;
@@ -131,6 +132,7 @@
         color: #fff;
         font-family: 'Inter', sans-serif;
         position: relative;
+        transition: all .5s ease-in-out;
 
         &::before {
             content: "";
@@ -141,12 +143,22 @@
             width: $size;
             height: $size;
             margin-top: -($size / 2);
-            background: url("data:image/svg+xml,%3Csvg width='15' height='15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.5.833L6.327 2.008l4.65 4.659H.834v1.666h10.142l-4.65 4.659L7.5 14.167 14.167 7.5 7.501.833z' fill='%23fff'/%3E%3C/svg%3E") center no-repeat;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNSAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuNTAwNjUgMC44MzMyNTJMNi4zMjU2NSAyLjAwODI1TDEwLjk3NTYgNi42NjY1OEgwLjgzMzk4NFY4LjMzMzI1SDEwLjk3NTZMNi4zMjU2NSAxMi45OTE2TDcuNTAwNjUgMTQuMTY2NkwxNC4xNjczIDcuNDk5OTJMNy41MDA2NSAwLjgzMzI1MloiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=');
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: all .5s ease-in-out;
         }
 
         &:hover {
-            color: #fff;
+            color: #FFA205;
+            background: none;
             text-decoration: none;
+
+            &::before {
+                background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTUiIGhlaWdodD0iMTUiIHZpZXdCb3g9IjAgMCAxNSAxNSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuNTAwNjUgMC44MzMyNTJMNi4zMjU2NSAyLjAwODI1TDEwLjk3NTYgNi42NjY1OEgwLjgzMzk4NFY4LjMzMzI1SDEwLjk3NTZMNi4zMjU2NSAxMi45OTE2TDcuNTAwNjUgMTQuMTY2NkwxNC4xNjczIDcuNDk5OTJMNy41MDA2NSAwLjgzMzI1MloiIGZpbGw9IiNGRkEyMDUiLz4KPC9zdmc+Cg==');
+                background-position: center;
+                background-repeat: no-repeat;
+            }
         }
     }
 
@@ -168,7 +180,9 @@
             top: -14px;
             width: 42px;
             height: 38px;
-            background: url("data:image/svg+xml,%3Csvg width='42' height='38' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.084 8.507c-2.674-.187-4.691.47-6.052 1.97-1.36 1.501-2.04 3.589-2.04 6.262 0 1.032.047 1.83.14 2.393h9.007v18.082H.759V18.428c0-5.582 1.15-9.897 3.448-12.946C6.553 2.432 9.977.908 14.48.908c1.313 0 2.533.094 3.659.282l-1.055 7.317zm23.57 0c-2.673-.187-4.69.47-6.05 1.97-1.361 1.501-2.041 3.589-2.041 6.262 0 1.032.047 1.83.14 2.393h9.007v18.082H24.33V18.428c0-5.582 1.15-9.897 3.448-12.946 2.346-3.05 5.77-4.574 10.273-4.574 1.313 0 2.533.094 3.659.282l-1.056 7.317z' fill='%23FF8807'/%3E%3C/svg%3E") center no-repeat;
+            background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDIiIGhlaWdodD0iMzgiIHZpZXdCb3g9IjAgMCA0MiAzOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE3LjA4MzUgOC41MDcxN0MxNC40MDk4IDguMzE5NTQgMTIuMzkyOCA4Ljk3NjI0IDExLjAzMjQgMTAuNDc3M0M5LjY3MjE0IDExLjk3ODMgOC45OTE5OCAxNC4wNjU3IDguOTkxOTggMTYuNzM5NEM4Ljk5MTk4IDE3Ljc3MTMgOS4wMzg4OSAxOC41Njg4IDkuMTMyNyAxOS4xMzE3SDE4LjEzODlWMzcuMjE0NEgwLjc1OTc2NlYxOC40MjhDMC43NTk3NjYgMTIuODQ2MSAxLjkwODk5IDguNTMwNjIgNC4yMDc0NSA1LjQ4MTY1QzYuNTUyODEgMi40MzI2OSA5Ljk3NzAzIDAuOTA4MjAzIDE0LjQ4MDEgMC45MDgyMDNDMTUuNzkzNSAwLjkwODIwMyAxNy4wMTMxIDEuMDAyMDIgMTguMTM4OSAxLjE4OTY0TDE3LjA4MzUgOC41MDcxN1pNNDAuNjU0NCA4LjUwNzE3QzM3Ljk4MDYgOC4zMTk1NCAzNS45NjM2IDguOTc2MjQgMzQuNjAzMyAxMC40NzczQzMzLjI0MyAxMS45NzgzIDMyLjU2MjkgMTQuMDY1NyAzMi41NjI5IDE2LjczOTRDMzIuNTYyOSAxNy43NzEzIDMyLjYwOTggMTguNTY4OCAzMi43MDM2IDE5LjEzMTdINDEuNzA5OFYzNy4yMTQ0SDI0LjMzMDZWMTguNDI4QzI0LjMzMDYgMTIuODQ2MSAyNS40Nzk5IDguNTMwNjIgMjcuNzc4MyA1LjQ4MTY1QzMwLjEyMzcgMi40MzI2OSAzMy41NDc5IDAuOTA4MjAzIDM4LjA1MSAwLjkwODIwM0MzOS4zNjQ0IDAuOTA4MjAzIDQwLjU4NCAxLjAwMjAyIDQxLjcwOTggMS4xODk2NEw0MC42NTQ0IDguNTA3MTdaIiBmaWxsPSIjRkY4ODA3Ii8+Cjwvc3ZnPgo=');
+            background-position: center;
+            background-repeat: no-repeat;
         }
     }
 
@@ -296,6 +310,22 @@
 
         &__text {
             width: 100%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .main-slide {
+        &__title {
+            font-size: 28px;
+        }
+    }
+}
+
+@media (max-width: 374px) {
+    .main-slide {
+        &__title {
+            font-size: 24px;
         }
     }
 }

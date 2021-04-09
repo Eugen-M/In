@@ -1,33 +1,31 @@
 
 <header class="page-header page-header_absolute">
+  <div class="page-header__overlay"></div>
   <div class="page-header__wrap">
     <div class="page-header__btn"><span class="page-header__btn-line"></span><span class="page-header__btn-line"></span><span class="page-header__btn-line"></span><span class="page-header__btn-line"></span></div>
     <div class="page-header__column">       <a class="page-header__logo" href="#"><img class="page-header__logo-img" src="i/logo.svg" alt="logo"/><img class="page-header__logo-slogan" src="i/slogan.svg" alt="logo"/></a>
-      <div class="page-header__search">
-        <form class="page-header__search-wrap" method="POST" action="">
-          <button class="page-header__search-btn" type="submit"></button>
-          <input class="page-header__search-input" type="text" placeholder="Search here ..."/>
-        </form>
+      <div class="page-header__search"><span class="page-header__search-btn" type="submit"></span>
+        <div class="page-header__search-ins">
+          <form class="page-header__search-wrap" method="POST" action="">
+            <button class="page-header__search-submit" type="submit"></button>
+            <input class="page-header__search-input" type="text" placeholder="Search here..."/>
+          </form>
+        </div>
       </div>
     </div>
     <ul class="page-header__menu page-header__menu_row">
       <li class="page-header__menu-item"><a class="page-header__menu-link page-header__menu-link_category" href="">Categories</a></li>
-      <li class="page-header__menu-item"><a class="page-header__menu-link page-header__menu-link_submit" href="">Submit a Complaint</a></li>
       <li class="page-header__menu-item"><a class="page-header__menu-link page-header__menu-link_faq" href="">FAQ’s</a></li>
+      <li class="page-header__menu-item"><a class="page-header__menu-link page-header__menu-link_signin" href="">Sign In</a></li>
     </ul>
-    <div class="page-header__user"><a class="page-header__user-signin" href="#">Sign In</a></div>
+    <div class="page-header__user"><a class="page-header__user-submit" href="#">Submit a Complaint</a></div>
   </div>
-  <div class="page-header__mob-dropdown">   
-    <div class="page-header__search page-header__search_bg">
-      <form class="page-header__search-wrap" method="POST" action="">
-        <button class="page-header__search-btn" type="submit"></button>
-        <input class="page-header__search-input" type="text" placeholder="Search here ..."/>
-      </form>
-    </div>
+  <div class="page-header__mob-dropdown">
     <ul class="page-header__menu">
-      <li class="page-header__menu-item"><a class="page-header__menu-link page-header__menu-link_category" href="">Categories</a></li>
       <li class="page-header__menu-item"><a class="page-header__menu-link page-header__menu-link_submit" href="">Submit a Complaint</a></li>
+      <li class="page-header__menu-item"><a class="page-header__menu-link page-header__menu-link_category" href="">Categories</a></li>
       <li class="page-header__menu-item"><a class="page-header__menu-link page-header__menu-link_faq" href="">FAQ’s</a></li>
+      <li class="page-header__menu-item"><a class="page-header__menu-link page-header__menu-link_signin" href="">Sign In</a></li>
     </ul>
   </div>
 </header>
