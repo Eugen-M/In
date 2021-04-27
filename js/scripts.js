@@ -28,5 +28,21 @@ $( document ).ready(function() {
             div.has(e.target).length === 0) {
             div.removeClass('page-header__search_opened');
         }
+
+        let userDropdown = $(".page-header__user");
+        if (!userDropdown.is(e.target) &&
+            userDropdown.has(e.target).length === 0) {
+            userDropdown.removeClass('page-header__user_opened');
+        }
     });
+
+    // click on user icon and name
+    $('.page-header__user-row').click(function(){
+        $(this).parent('.page-header__user').toggleClass('page-header__user_opened');
+	});
+
+    // click on mobile user icon and name
+    $('.page-header__menu-box').click(function(){
+        $(this).parent('.page-header__menu-item').toggleClass('page-header__menu-item_opened');
+	});
 });
