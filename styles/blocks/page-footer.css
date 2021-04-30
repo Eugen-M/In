@@ -264,7 +264,7 @@
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding-top: 47px;
-    padding-bottom: 48px;
+    padding-bottom: 8px;
   }
   .page-footer__column-left {
     -ms-flex: 0 0 60%;
