@@ -38,7 +38,6 @@
 
         &-text {
             position: relative;
-            padding-left: 18px;
             font-size: 14px;
             font-weight: 600;
 
@@ -58,9 +57,13 @@
             color: #4C941E;
         }
 
-        &_online &-text::before {
-            background: #4C941E;
-            border: 2px solid #FFFFFF;
+        &_online &-text {
+            padding-left: 18px;
+
+            &::before {
+                background: #4C941E;
+                border: 2px solid #FFFFFF;
+            }
         }
     }
 
