@@ -1,0 +1,84 @@
+.service-contacts
+    .service-contacts__title Punjab National Bank (PNB) <br />Customer Service Contacts
+    
+    .service-contacts__item.service-contacts__item_about
+        .service-contacts__subtitle About
+        .service-contacts__content 
+            p.service-contacts__parag Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+    
+    .service-contacts__sep
+        
+    .service-contacts__item.service-contacts__item_office
+        .service-contacts__subtitle Head Office Address
+        .service-contacts__content
+            p.service-contacts__parag 7 Bhikhaiji Cama Place, New Delhi New Delhi District, Delhi India - 110607
+            
+            a.service-contacts__link(href="") Get a Direction
+    
+    .service-contacts__sep
+        
+    .service-contacts__item.service-contacts__item_company
+        .service-contacts__subtitle Company Representative
+        .service-contacts__user
+            .service-contacts__user-ava(style="background: url(i/avatar.png) center no-repeat;")
+            .service-contacts__user-name Guan H
+            
+    .service-contacts__sep
+        
+    .service-contacts__item.service-contacts__item_website
+        .service-contacts__subtitle Website
+        .service-contacts__content 
+            a.service-contacts__link(href="" target="_blank") www.pnbindia.in
+    
+    .service-contacts__sep
+        
+    .service-contacts__item.service-contacts__item_phone
+        .service-contacts__subtitle PNB Phone Numbers
+        .service-contacts__content
+            table.service-contacts__table.service-contacts__table_phones
+                tbody.service-contacts__tbody
+                    tr.service-contacts__tr.service-contacts__tr_title
+                        th.service-contacts__th(rowspan="2") Toll free
+                        td.service-contacts__td 1-800-1032222
+                    tr.service-contacts__tr
+                        td.service-contacts__td 1-800-1032222
+                    tr.service-contacts__tr.service-contacts__tr_title
+                        th.service-contacts__th(rowspan="2") Phone number
+                        td.service-contacts__td 1-800-1032222
+                    tr.service-contacts__tr
+                        td.service-contacts__td 1-800-1032222
+                        
+    .service-contacts__sep
+                            
+    .service-contacts__item.service-contacts__item_hours
+        .service-contacts__subtitle Working Hours
+        .service-contacts__content
+            table.service-contacts__table.service-contacts__table_hourse
+                tbody.service-contacts__tbody
+                    each val, key in {"Monday": "08:00 AM - 08:00 PM", "Tuesday": "08:00 AM - 08:00 PM", "Wednesday": "08:00 AM - 08:00 PM", "Thursday": "08:00 AM - 08:00 PM", "Friday": "08:00 AM - 08:00 PM", "Saturday": "Closed"}
+                        tr.service-contacts__tr
+                            td.service-contacts__td= key
+                            td.service-contacts__td= val
+    
+    .service-contacts__sep
+                                    
+    .service-contacts__item.service-contacts__item_social
+        .service-contacts__subtitle Social Media
+        .service-contacts__content
+            table.service-contacts__table.service-contacts__table_social
+                tbody.service-contacts__tbody
+                    tr.service-contacts__tr
+                        td.service-contacts__td
+                            span.service-contacts__social-title.service-contacts__social-title_fb Facebook
+                        td.service-contacts__td
+                            a.service-contacts__link(href="" target="_blank") PNB India
+                    tr.service-contacts__tr
+                        td.service-contacts__td
+                            span.service-contacts__social-title.service-contacts__social-title_in Instagram
+                        td.service-contacts__td
+                            a.service-contacts__link(href="" target="_blank") @pnbindia_
+                    tr.service-contacts__tr
+                        td.service-contacts__td
+                            span.service-contacts__social-title.service-contacts__social-title_youtube YouTube
+                        td.service-contacts__td
+                            a.service-contacts__link(href="" target="_blank") PNB India Channel

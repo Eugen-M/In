@@ -2,7 +2,12 @@ extends layout/main-logged
 
 block title
     | Title
+    
+block styles
+    link(href="styles/page-about.css" rel="stylesheet")
 
+block scripts
+        
 block content
     include modules/main-slide
     include modules/introduction

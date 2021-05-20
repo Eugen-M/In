@@ -1,0 +1,151 @@
+extends layout/main
+
+block title
+    | Title
+    
+block styles
+    link(href="styles/page-company.css" rel="stylesheet")
+
+block scripts
+    script(src="js/slick.min.js")
+    script(src="js/page-company.js")
+        
+block content
+    .company-section
+        .page-container__wrap
+            .company-section__header
+                .company-section__logo(style="background: #92263D;")
+                    img.company-section__logo-img(src="i/company-logo.png" alt="logo")
+                        
+                .company-section__box
+                    .company-section__row
+                        .company-section__col-head
+                            .company-section__title Punjab National Bank (PNB)
+                            span.company-section__icon
+                        
+                        .company-section__status.company-section__status_online 
+                            span.company-section__status-text Online
+                        
+                    .company-section__row.company-section__row_rate
+                        .rate-row
+                            .rate-row__item
+                                
+                            .rate-row__item
+                                
+                            .rate-row__item
+                                
+                            .rate-row__item
+                                
+                            .rate-row__item.rate-row__item_half
+                                
+                            .rate-row__num 4.6
+                            
+                        .company-section__sep
+                            
+                        .company-section__upd Last updated 06 Apr 2021
+                        
+                    .company-section__row.company-section__row_wrap
+                        .company-section__row.company-section__row_items
+                            .company-section__item.company-section__item_complaints Complaints 
+                                span.company-section__item-num 781
+                                
+                            .company-section__sep
+                                
+                            .company-section__item.company-section__item_resolved Resolved 
+                                span.company-section__item-num 781
+                                
+                            .company-section__sep
+                            
+                            .company-section__item.company-section__item_unresolved Unresolved 
+                                span.company-section__item-num 781
+                            
+                            .company-section__sep
+                            
+                        .company-section__msg So far so good - The company responded to our notifications
+                            .company-section__hint
+                                .company-section__hint-icon
+                                .company-section__hint-dropdown So far so good - The company responded to our notifications
+                        
+                    .company-section__row.company-section__row_buttons
+                        a.company-section__btn.company-section__btn_quick(href="") Quick Links
+                             
+                        .company-section__sep
+                            
+                        a.company-section__btn.company-section__btn_claim(href="") Claim Profile
+                            
+                        .company-section__sep
+                            
+                        a.company-section__btn.company-section__btn_follow(href="") Follow
+                        
+                        .company-section__sep
+                            
+                        a.company-section__btn.company-section__btn_share(href="")
+                            
+            .tabs-block
+                .tabs-block__navi
+                    a.tabs-block__link.tabs-block__link_active(href="") Profile
+                    a.tabs-block__link(href="") Complaints
+                    a.tabs-block__link(href="") Q&amp;A
+                    a.tabs-block__link(href="") File a Complaint
+        .tabs-block__wrap
+            .page-container__wrap      
+                .tabs-block__content.tabs-block__content_active
+                    .company-section__wrap
+                        .company-section__column-left
+                            include modules/file-complaints
+                            
+                            include modules/service-contacts
+                                            
+                        .company-section__column-right
+                            .company-section__content
+                                .company-section__subtitle Overview
+                                p.company-section__content-parag Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.
+                                
+                            .company-section__content
+                                .company-section__subtitle Additional Information
+                                
+                                p.company-section__content-parag Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+
+                                p.company-section__content-parag It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.    
+                .tabs-block__content 
+                    .company-section__wrap
+                        .company-section__column-left
+                            include modules/file-complaints
+                            
+                        .company-section__column-right
+                            include modules/recently-resolved
+                            
+                            include modules/latest-complaints
+                    
+                .tabs-block__content
+                    .company-section__wrap
+                        .company-section__column-left
+                            include modules/file-complaints
+                            
+                        .company-section__column-right
+                            .company-section__content
+                                .company-section__subtitle Frequently’s Ask Question
+                                
+                                .question-block__wrap
+                                    .question-block
+                                        .question-block__title How to contact Punjab National Bank Customer Care ?
+                                            
+                                        .question-block__content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        
+                                    .question-block
+                                        .question-block__title How to check PNB Balance ?
+                                            
+                                        .question-block__content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                        
+                                    .question-block
+                                        .question-block__title How can I check PNB Account balance through SMS ?
+                                            
+                                        .question-block__content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                
+                                a.company-section__more(href="") View More PNG Questions &amp; Answer
+                .tabs-block__content
+                    .company-section__wrap
+                        .company-section__column-left
+                            include modules/file-complaints
+                            
+                        .company-section__column-right

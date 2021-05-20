@@ -1,0 +1,174 @@
+.consumer-block {
+    padding: 89px 0;
+
+    &__title {
+        text-align: center;
+        font-size: 40px;
+        color: #0F122E;
+        font-weight: bold;
+        line-height: 1.375;
+        font-family: 'Manrope', sans-serif;
+        margin: 0 0 32px;
+    }
+
+    &__item {
+        padding: 22px 20px;
+        margin: 15px;
+        border: 1px solid #F6F6F9;
+        background: #ffffff;
+        border-radius: 4px;
+        transition: all .5s ease-in-out;
+        width: 362px;
+
+        &:hover {
+            box-shadow: 4px 12px 24px rgba(117, 126, 109, 0.05);
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin-bottom: 25px;
+    }
+
+    &__logo {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+    }
+
+    &__img {
+        max-width: 18px;
+        height: auto;
+        display: block;
+    }
+
+    &__column {
+        width: 100%;
+        padding-left: 13px;
+        overflow: hidden;
+    }
+
+    &__name {
+        font-size: 16px;
+        font-weight: 800;
+        color: #0F122E;
+        margin-bottom: 4px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-family: 'Manrope', sans-serif;
+        white-space: nowrap;
+        display: block;
+    }
+
+    &__data {
+        color: #7E7F91;
+        font-size: 14px;
+        line-height: 1.22;
+        font-family: 'Inter', sans-serif;
+    }
+
+    &__link {
+        color: #7E7F91;
+        font-size: 14px;
+        line-height: 1.22;
+        font-family: 'Inter', sans-serif;
+    }
+
+    &__subtitle {
+        font-size: 15px;
+        color: #0F122E;
+        font-weight: bold;
+        margin: 0 0 7px;
+        line-height: 1.35;
+        font-family: 'Manrope', sans-serif;
+    }
+
+    &__text {
+        font-size: 14px;
+        color: #57586B;
+        line-height: 1.6;
+        font-family: 'Inter', sans-serif;
+        margin-bottom: 18px;
+    }
+
+    &__read-more {
+        font-size: 14px;
+        font-weight: 600;
+        font-family: 'Inter', sans-serif;
+        color: #0F122E;
+        position: relative;
+        padding-right: 25px;
+        display: inline-block;
+        vertical-align: middle;
+
+        &::before {
+            content: "";
+            width: 16px;
+            height: 16px;
+            margin-top: -8px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxNiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEwLjI1IDAuNzVMOS4xOTI1IDEuODA3NUwxMi42Mjc1IDUuMjVIMC41VjYuNzVIMTIuNjI3NUw5LjE4NSAxMC4xOTI1TDEwLjI1IDExLjI1TDE1LjUgNkwxMC4yNSAwLjc1WiIgZmlsbD0iIzBGMTIyRSIvPgo8L3N2Zz4K') center no-repeat;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .consumer-block {
+        background: #FCFCFC;
+        padding: 55px 0 25px;
+
+        &__title {
+            font-size: 32px;
+            line-height: 1.375;
+            margin: 0 0 8px;
+        }
+
+        &__header {
+            flex-wrap: wrap;
+            margin-bottom: 22px;
+        }
+
+        &__column {
+            padding-left: 0;
+        }
+
+        &__logo {
+            margin-bottom: 16px;
+        }
+
+        &__data {
+            font-size: 14px;
+            line-height: 1.21;
+        }
+
+        &__subtitle {
+            font-size: 14px;
+            line-height: 1.36;
+            margin-bottom: 5px;
+        }
+
+        &__s-carousel {
+            display: none;
+        }
+
+        &__item {
+            width: 250px;
+            margin-left: 5px;
+            margin-right: 5px;
+            padding-bottom: 19px;
+        }
+
+        &__text {
+            margin-bottom: 22px;
+        }
+    }
+}

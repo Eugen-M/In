@@ -1,0 +1,170 @@
+.in-news {
+    background: #FCFCFC;
+    border-radius: 4px;
+
+    &__wrap {
+        padding: 81px 0 63px;
+    }
+
+    &__sep {
+        border: 1px solid #EBEBF2;
+    }
+
+    &__title {
+        font-size: 38px;
+        color: #0F122E;
+        font-weight: bold;
+        line-height: 1.36;
+        font-family: 'Manrope', sans-serif;
+        margin: 0 0 13px;
+    }
+
+    &__item {
+        padding: 23px 35px 20px;
+        border: 1px solid #F6F6F9;
+        background: #ffffff;
+        border-radius: 4px;
+        margin: 15px;
+        transition: all .5s ease-in-out;
+        display: block;
+
+        &:hover {
+            box-shadow: 4px 12px 24px rgba(117, 126, 109, 0.05);
+            text-decoration: none;
+        }
+    }
+
+    &__logo {
+        height: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        max-height: 20px;
+        display: block;
+        margin: 0 auto;
+        width: auto;
+    }
+
+    &__descr {
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        font-size: 15px;
+        line-height: 1.545;
+        font-family: 'Inter', sans-serif;
+        color: #57586B;
+        height: 69px;
+        overflow: hidden;
+        text-align: center;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+    }
+
+    _:-ms-fullscreen,
+    :root &__descr {
+        height: 95px;
+    }
+
+    &__item:hover &__descr {
+        color: #0F122E;
+    }
+
+    &__carousel {
+        margin-left: -15px;
+        margin-right: -15px;
+
+        .slick-arrow {
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            top: 50%;
+            margin-top: -25px;
+            z-index: 10;
+            overflow: hidden;
+            border-radius: 50%;
+            text-indent: -9999px;
+            cursor: pointer;
+
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            &.slick-disabled {
+                display: none !important;
+            }
+        }
+
+        .slick-prev {
+            left: -10px;
+            border: 1px solid #F6F6F9;
+            box-shadow: 4px 12px 24px rgba(117, 126, 109, 0.05);
+            background: #ffffff;
+
+            &::before {
+                background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTEyLjUwMSA0LjE2N2wtMS4xNzUgMS4xNzUgMy44MTcgMy44MjVIMS42Njh2MS42NjdoMTMuNDc1bC0zLjgyNSAzLjgyNSAxLjE4MyAxLjE3NUwxOC4zMzUgMTBsLTUuODMzLTUuODMzeiIgZmlsbD0iIzBmMTIyZSIvPjwvc3ZnPg==') center no-repeat;
+                transform: rotate(180deg);
+            }
+        }
+
+        .slick-next {
+            right: -10px;
+            border: 1px solid #F6F6F9;
+            box-shadow: 4px 12px 24px rgba(117, 126, 109, 0.05);
+            background: #ffffff;
+
+            &::before {
+                background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTEyLjUwMSA0LjE2N2wtMS4xNzUgMS4xNzUgMy44MTcgMy44MjVIMS42Njh2MS42NjdoMTMuNDc1bC0zLjgyNSAzLjgyNSAxLjE4MyAxLjE3NUwxOC4zMzUgMTBsLTUuODMzLTUuODMzeiIgZmlsbD0iIzBmMTIyZSIvPjwvc3ZnPg==') center no-repeat;
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .in-news {
+        .slick-prev {
+            left: 0;
+        }
+
+        .slick-next {
+            right: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .in-news {
+        &__wrap {
+            padding: 63px 0 41px;
+        }
+
+        &__title {
+            font-size: 32px;
+            line-height: 1.375;
+            margin-bottom: 5px;
+        }
+
+        &__carousel {
+            margin-left: -6px;
+            margin-right: -20px;
+
+            .slick-prev {
+                left: -4px;
+            }
+
+            .slick-next {
+                right: 12px;
+            }
+        }
+
+        &__item {
+            width: 250px;
+            margin-left: 6px;
+            margin-right: 6px;
+        }
+    }
+}

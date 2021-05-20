@@ -1,0 +1,14 @@
+@import url(base/fonts.css);
+@import url(base/default.css);
+@import url(base/page-content.css);
+@import url(blocks/page-header.css);
+@import url(blocks/page-footer.css);
+@import url(slick.css);
+@import url(blocks/tabs-block.css);
+@import url(blocks/company-section.css);
+@import url(blocks/rate-row.css);
+@import url(blocks/file-complaints.css);
+@import url(blocks/question-block.css);
+@import url(blocks/recently-resolved.css);
+@import url(blocks/latest-complaints.css);
+@import url(blocks/service-contacts.css);

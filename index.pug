@@ -1,0 +1,235 @@
+extends layout/main
+
+block title
+    | Title
+    
+block styles
+    link(href="styles/page-main.css" rel="stylesheet")
+
+block scripts
+    script(src="js/slick.min.js")
+    script(src="js/page-index.js")
+    
+block content    
+    .present-block
+        .page-container__wrap
+            .present-block__wrap
+                .present-block__column
+                    h1.present-block__title At Consumer<br class="present-block__sep" />Complaints.in we want to make sure you 
+                        span.present-block__title-sub get your voice heard
+                        
+                    .present-block__text Our platform acts as a mediator where consumers and companies can find a common language together to solve their problem.
+                        
+                    form.present-block__search(method='POST' action='')
+                        input.present-block__input(type="text" placeholder="Company or categories...")
+                            
+                        button.present-block__submit(type="submit") Search
+                            
+                .present-block__column
+                    img.present-block__img(src="i/present-img.svg" alt="")
+                        
+    .in-news
+        .page-container__wrap
+            .in-news__wrap
+                .in-news__title In the News
+                    
+                .in-news__carousel
+                    div.slick-item
+                        .in-news__item
+                            .in-news__logo
+                                img.in-news__img(src="i/logo-lifehacker.png" alt="logo")
+                            .in-news__descr “Lorem Ipsum is simply dummy text of the printing and typesetting industry  “Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    div.slick-item
+                        .in-news__item
+                            .in-news__logo
+                                img.in-news__img(src="i/logo-time.png" alt="logo")
+                            .in-news__descr  “Lorem Ipsum is simply dummy text of the printing and typesetting industry  “Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    div.slick-item
+                        .in-news__item
+                            .in-news__logo
+                                img.in-news__img(src="i/logo-bbc.png" alt="logo")
+                            .in-news__descr  “Lorem Ipsum is simply dummy text of the printing and typesetting industry  “Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    div.slick-item
+                        .in-news__item
+                            .in-news__logo
+                                img.in-news__img(src="i/logo-medium.png" alt="logo")
+                            .in-news__descr  “Lorem Ipsum is simply dummy text of the printing and typesetting industry  “Lorem Ipsum is simply dummy text of the printing and typesetting industry
+                    div.slick-item
+                        .in-news__item
+                            .in-news__logo
+                                img.in-news__img(src="i/logo-lifehacker.png" alt="logo")
+                            .in-news__descr “Lorem Ipsum is simply dummy text of the printing and typesetting industry  “Lorem Ipsum is simply dummy text of the printing and typesetting industry
+            
+            .in-news__sep
+                
+            .resolved-complaints 
+                .resolved-complaints__title Resolved Complaints
+                
+                .resolved-complaints__carousel
+                    div.slick-item
+                        .resolved-complaints__item
+                            .resolved-complaints__check Resolved
+                            .resolved-complaints__text “Service scammed me to sing up for a membership.
+                            .resolved-complaints__row
+                                a.resolved-complaints__logo(href="")
+                                    img.resolved-complaints__img(src="i/mini-logo.png" alt="logo")
+                                a.resolved-complaints__name(href="") CGV Inc. 
+                                .resolved-complaints__date 05 Apr 2021
+                                
+                    div.slick-item
+                        .resolved-complaints__item
+                            .resolved-complaints__check Resolved
+                            .resolved-complaints__text “Service scammed me to sing up for a membership. “Service scammed me to sing up for a membership. “Service scammed me to sing up for a membership.
+                            .resolved-complaints__row
+                                a.resolved-complaints__logo(href="")
+                                    img.resolved-complaints__img(src="i/mini-logo.png" alt="logo")
+                                a.resolved-complaints__name(href="") CGV Inc. 
+                                .resolved-complaints__date 05 Apr 2021
+                                
+                    div.slick-item
+                        .resolved-complaints__item
+                            .resolved-complaints__check Resolved
+                            .resolved-complaints__text “Service scammed me to sing up for a membership.
+                            .resolved-complaints__row
+                                a.resolved-complaints__logo(href="")
+                                    img.resolved-complaints__img(src="i/mini-logo.png" alt="logo")
+                                a.resolved-complaints__name(href="") CGV Inc. 
+                                .resolved-complaints__date 05 Apr 2021
+                                
+                    div.slick-item
+                        .resolved-complaints__item
+                            .resolved-complaints__check Resolved
+                            .resolved-complaints__text “Service scammed me to sing up for a membership.
+                            .resolved-complaints__row
+                                a.resolved-complaints__logo(href="")
+                                    img.resolved-complaints__img(src="i/mini-logo.png" alt="logo")
+                                a.resolved-complaints__name(href="") CGV Inc.  
+                                .resolved-complaints__date 05 Apr 2021
+                                
+                    div.slick-item
+                        .resolved-complaints__item
+                            .resolved-complaints__check Resolved
+                            .resolved-complaints__text “Service scammed me to sing up for a membership. “Service scammed me to sing up for a membership. “Service scammed me to sing up for a membership.
+                            .resolved-complaints__row
+                                a.resolved-complaints__logo(href="")
+                                    img.resolved-complaints__img(src="i/mini-logo.png" alt="logo")
+                                a.resolved-complaints__name(href="") CGV Inc. 
+                                .resolved-complaints__date 05 Apr 2021
+        
+    .care-block
+        .page-container__wrap
+            .care-block__title Companies that Care
+            
+            .care-block__text Business that are beyond compare in complaint handling
+            
+            .care-block__wrap
+                each val in [1, 2, 3, 4, 2, 3, 4, 1]
+                    .care-block__item
+                        img.care-block__img(src="i/company-logo-"+ val + ".png" alt="")
+        
+    .consumer-block
+        .page-container__wrap 
+            .consumer-block__title Consumer Complaints and Review
+            
+        .consumer-block__f-carousel
+            mixin consumer-block__item
+                div.slick-item
+                    .consumer-block__item
+                        .consumer-block__header
+                            a.consumer-block__logo(style="background: #92263D;" href="")
+                                img.consumer-block__img(src="i/mini-logo-1.png" alt="logo")
+                                
+                            .consumer-block__column
+                                a.consumer-block__name(href="") Punjab National Bank Punjab National Bank
+                                .consumer-block__data by 
+                                    a.consumer-block__link(href="") Kyrstoff Piatek 
+                                    | on Apr 14, 2021
+                                
+                        .consumer-block__subtitle Unethical Business practice
+                            
+                        .consumer-block__text “Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                        
+                        a.consumer-block__read-more(href="") Read Full Review
+                                
+            +consumer-block__item
+            +consumer-block__item
+            +consumer-block__item
+            +consumer-block__item
+            +consumer-block__item
+            +consumer-block__item
+            
+        .consumer-block__s-carousel
+            +consumer-block__item
+            +consumer-block__item
+            +consumer-block__item
+            +consumer-block__item
+            +consumer-block__item
+            +consumer-block__item
+            
+    .help-block
+        .page-container__wrap
+            .help-block__wrap 
+                .help-block__title We are Here to Help
+                
+                .help-block__text Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                
+                .help-block__column
+                    .help-block__item.help-block__item_resolution 15 years of successful complaint resolution
+                        .help-block__icon
+                            
+                    .help-block__item.help-block__item_individual Individual approach to each complaint
+                        .help-block__icon
+                            
+                    .help-block__item.help-block__item_genuine Genuine people reviews
+                        .help-block__icon
+                            
+                    .help-block__item.help-block__item_solve Solve your problem and follow the experience
+                        .help-block__icon
+            
+    .trendings-complaints
+        .page-container__wrap 
+            .trendings-complaints__title Trendings Complaints
+            
+            .trendings-complaints__text Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            
+            .trendings-complaints__wrap
+                mixin item
+                    .trendings-complaints__item
+                        .trendings-complaints__header
+                            a.trendings-complaints__icon(style="background: #92263D;" href="")
+                                img.trendings-complaints__img(src="i/mini-logo-1.png" alt="logo")
+                            a.trendings-complaints__subtitle(href="") Punjab National Bank Housing Finance - Fraud Company...
+                                
+                        .trendings-complaints__content Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                            
+                        .trendings-complaints__row
+                            .trendings-complaints__user
+                                a.trendings-complaints__ava(style="background: url(i/avatar.png) center no-repeat;" href="")
+                                    
+                                .trendings-complaints__column
+                                    a.trendings-complaints__name(href="") Andrew Robinson
+                                    .trendings-complaints__date 05 Apr 2021
+                                    
+                            a.trendings-complaints__read-more(href="") Read More
+                    
+                +item
+                +item
+                +item        
+            
+    .popular-categories
+        .page-container__wrap
+            .popular-categories__box
+                .popular-categories__title Our Popular Categories 
+                    
+                .popular-categories__wrap
+                    a.popular-categories__item.popular-categories__item_airlines(href="") 
+                        span.popular-categories__link Airlines
+                    
+                    a.popular-categories__item.popular-categories__item_business(href="") 
+                        span.popular-categories__link Business &amp; Finances
+                        
+                    a.popular-categories__item.popular-categories__item_edication(href="") 
+                        span.popular-categories__link Education
+                        
+                    a.popular-categories__item.popular-categories__item_telecom(href="") 
+                        span.popular-categories__link Telecommunications
