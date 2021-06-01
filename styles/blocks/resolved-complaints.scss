@@ -138,6 +138,16 @@
     }
 }
 
+@media (min-width: 1024px) {
+    .resolved-complaints {
+        &__item {
+            &:hover {
+                opacity: .7;
+            }
+        }
+    }
+}
+
 @media (max-width: 1200px) {
     .resolved-complaints {
         &__carousel {
@@ -163,16 +173,8 @@
         }
 
         &__carousel {
-            margin-left: -6px;
+            margin-left: -20px;
             margin-right: -20px;
-
-            .slick-prev {
-                left: -4px;
-            }
-
-            .slick-next {
-                right: 12px;
-            }
         }
 
         &__item {

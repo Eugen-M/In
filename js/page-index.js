@@ -18,14 +18,20 @@ $( document ).ready(function() {
                 breakpoint: 769,
                 settings: {
                     slidesToShow: 2,
-                    variableWidth: true
+                    variableWidth: true,
+                    arrows: false,
+                    infinite: true,
+                    centerMode: true
                 }
             },
             {
                 breakpoint: 560,
                 settings: {
-                    slidesToShow: 2,
-                    variableWidth: true
+                    slidesToShow: 1,
+                    variableWidth: true,
+                    arrows: false,
+                    infinite: true,
+                    centerMode: true
                 }
             }
         ]
@@ -50,14 +56,20 @@ $( document ).ready(function() {
                 breakpoint: 769,
                 settings: {
                     slidesToShow: 2,
-                    variableWidth: true
+                    variableWidth: true,
+                    arrows: false,
+                    infinite: true,
+                    centerMode: true
                 }
             },
             {
                 breakpoint: 560,
                 settings: {
-                    slidesToShow: 2,
-                    variableWidth: true
+                    slidesToShow: 1,
+                    variableWidth: true,
+                    arrows: false,
+                    infinite: true,
+                    centerMode: true
                 }
             }
         ]

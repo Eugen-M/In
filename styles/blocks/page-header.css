@@ -2,6 +2,7 @@
   padding: 0 20px;
   z-index: 10;
   background: #1E6528;
+  position: relative;
 }
 .page-header_absolute {
   position: absolute;
@@ -119,6 +120,10 @@
   position: relative;
   display: block;
 }
+.page-header__menu-link:hover {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
 .page-header__menu-link::before {
   content: "";
   position: absolute;
@@ -162,10 +167,6 @@
 }
 .page-header__menu-link_exit::before {
   background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTQiIHZpZXdCb3g9IjAgMCAxNiAxNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuMjQ2MDkgMy4yNUw2LjE5NjA5IDQuM0w4LjE0NjA5IDYuMjVIMC40OTYwOTRWNy43NUg4LjE0NjA5TDYuMTk2MDkgOS43TDcuMjQ2MDkgMTAuNzVMMTAuOTk2MSA3TDcuMjQ2MDkgMy4yNVpNMTMuOTk2MSAxMi4yNUg3Ljk5NjA5VjEzLjc1SDEzLjk5NjFDMTQuODIxMSAxMy43NSAxNS40OTYxIDEzLjA3NSAxNS40OTYxIDEyLjI1VjEuNzVDMTUuNDk2MSAwLjkyNSAxNC44MjExIDAuMjUgMTMuOTk2MSAwLjI1SDcuOTk2MDlWMS43NUgxMy45OTYxVjEyLjI1WiIgZmlsbD0iI2ZmZmZmZiIvPgo8L3N2Zz4K") center no-repeat;
-}
-.page-header__menu-link:hover {
-  color: #FFFFFF;
-  text-decoration: underline;
 }
 .page-header__menu-ava {
   border: 1px solid #FFFFFF;

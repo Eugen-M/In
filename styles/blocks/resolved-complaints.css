@@ -132,6 +132,11 @@
   background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTEyLjUwMSA0LjE2N2wtMS4xNzUgMS4xNzUgMy44MTcgMy44MjVIMS42Njh2MS42NjdoMTMuNDc1bC0zLjgyNSAzLjgyNSAxLjE4MyAxLjE3NUwxOC4zMzUgMTBsLTUuODMzLTUuODMzeiIgZmlsbD0iIzBmMTIyZSIvPjwvc3ZnPg==") center no-repeat;
 }
 
+@media (min-width: 1024px) {
+  .resolved-complaints__item:hover {
+    opacity: .7;
+  }
+}
 @media (max-width: 1200px) {
   .resolved-complaints__carousel .slick-prev {
     left: 0;
@@ -150,14 +155,8 @@
     margin-bottom: 5px;
   }
   .resolved-complaints__carousel {
-    margin-left: -6px;
+    margin-left: -20px;
     margin-right: -20px;
-  }
-  .resolved-complaints__carousel .slick-prev {
-    left: -4px;
-  }
-  .resolved-complaints__carousel .slick-next {
-    right: 12px;
   }
   .resolved-complaints__item {
     width: 250px;

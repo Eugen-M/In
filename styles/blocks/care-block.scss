@@ -35,6 +35,11 @@
         justify-content: center;
         flex-wrap: wrap;
         margin: 0 3px 30px;
+        transition: all .5s ease-in-out;
+
+        &:hover {
+            opacity: .7;
+        }
     }
 
     &__img {

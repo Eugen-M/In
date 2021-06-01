@@ -46,6 +46,11 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 3px 30px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+.care-block__item:hover {
+  opacity: .7;
 }
 .care-block__img {
   max-height: 24px;

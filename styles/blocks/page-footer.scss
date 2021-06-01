@@ -68,7 +68,7 @@
         margin-top: -3px;
         margin-bottom: 20px;
         font-size: 13px;
-        color: #7E7F91;
+        color: rgba(255, 255, 225, 0.6);
         line-height: 1.8;
         font-family: 'Inter', sans-serif;
     }
@@ -84,7 +84,7 @@
 
     &__btn {
         background: #62A824;
-        border-radius: 50px;
+        border-radius: 4px;
         display: block;
         transition: all .5s ease-in-out;
         white-space: nowrap;
@@ -418,6 +418,14 @@
             &-list {
                 justify-content: center;
             }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .page-footer {
+        &__text {
+            font-size: 20px;
         }
     }
 }

@@ -124,7 +124,7 @@ block content
             
             .care-block__wrap
                 each val in [1, 2, 3, 4, 2, 3, 4, 1]
-                    .care-block__item
+                    a.care-block__item(href="")
                         img.care-block__img(src="i/company-logo-"+ val + ".png" alt="")
         
     .consumer-block
@@ -140,7 +140,8 @@ block content
                                 img.consumer-block__img(src="i/mini-logo-1.png" alt="logo")
                                 
                             .consumer-block__column
-                                a.consumer-block__name(href="") Punjab National Bank Punjab National Bank
+                                .consumer-block__name
+                                    a.consumer-block__name-link(href="") Punjab National Bank Punjab National Bank
                                 .consumer-block__data by 
                                     a.consumer-block__link(href="") Kyrstoff Piatek 
                                     | on Apr 14, 2021
