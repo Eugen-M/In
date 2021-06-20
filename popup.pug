@@ -1,0 +1,100 @@
+extends layout/main
+
+block title
+    | Title
+    
+block styles
+    link(href="styles/page-company.css" rel="stylesheet")
+    link(href="styles/blocks/check-item.css" rel="stylesheet")
+    link(href="styles/blocks/popup-block.css" rel="stylesheet")
+
+block scripts
+        
+block content
+    div(style="background: lightgray;")
+        .popup-block
+            .popup-block__title Sign in 
+            
+            .popup-block__content
+                .popup-block__wrap
+                    .popup-block__wrap-ins
+                        a.popup-block__tab.popup-block__tab_active(href="#") Sign in 
+                        a.popup-block__tab(href="#") Register
+                    
+                form.popup-block__form(method='POST' action='')
+                    .popup-block__row
+                        input.popup-block__input(type="text" placeholder="Email")
+                    
+                    .popup-block__row    
+                        input.popup-block__input(type="password" placeholder="Password")
+                    
+                        .popup-block__forgot
+                            a.popup-block__forgot-link(href="") Forgot your password?
+                    
+                    .check-item
+                        label.check-item__label
+                            input.check-item__input(type="checkbox" id="ch")
+                            span.check-item__dot
+                            span.check-item__name Remember this device 
+                                
+                    button.popup-block__btn.popup-block__btn_submit(type="submit") Sign in 
+                    
+                .popup-block__sep
+                    span.popup-block__sep-text or sign in with 
+                    
+                .popup-block__buttons
+                    button.popup-block__btn.popup-block__btn_google 
+                        span.popup-block__btn-icon Google 
+                    
+                    .popup-block__buttons-wrap
+                        button.popup-block__btn.popup-block__btn_fb 
+                            span.popup-block__btn-icon Facebook
+                        button.popup-block__btn.popup-block__btn_tw 
+                            span.popup-block__btn-icon Twitter
+                        
+            .popup-block__btn.popup-block__btn_close
+            
+        .popup-block
+            .popup-block__title Register 
+            
+            .popup-block__content
+                .popup-block__wrap
+                    .popup-block__wrap-ins
+                        a.popup-block__tab(href="#") Sign in 
+                        a.popup-block__tab.popup-block__tab_active(href="#") Register
+                    
+                form.popup-block__form(method='POST' action='')
+                    .popup-block__row
+                        input.popup-block__input(type="text" placeholder="Email")
+                        
+                    .popup-block__row
+                        input.popup-block__input(type="text" placeholder="Display Name")
+                        
+                    .popup-block__row
+                        input.popup-block__input(type="password" placeholder="Password")
+                    
+                    .check-item
+                        label.check-item__label
+                            input.check-item__input(type="checkbox" id="ch1")
+                            span.check-item__dot
+                            span.check-item__name By clicking sign up you are agreeing to our   
+                                a.check-item__link(href="#") Terms of Use 
+                                | and 
+                                a.check-item__link(href="#") Privacy Policy
+                                
+                    button.popup-block__btn.popup-block__btn_submit(type="submit") Register
+                    
+                .popup-block__sep
+                    span.popup-block__sep-text or sign in with 
+                    
+                .popup-block__buttons
+                    button.popup-block__btn.popup-block__btn_google 
+                        span.popup-block__btn-icon Google 
+                    
+                    .popup-block__buttons-wrap
+                        button.popup-block__btn.popup-block__btn_fb 
+                            span.popup-block__btn-icon Facebook
+                        button.popup-block__btn.popup-block__btn_tw 
+                            span.popup-block__btn-icon Twitter
+                        
+            .popup-block__btn.popup-block__btn_close

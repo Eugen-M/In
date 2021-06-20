@@ -1,123 +1,86 @@
 .popular-categories {
-  margin: 0 0 120px;
-}
-.popular-categories__title {
-  text-align: center;
-  font-size: 40px;
-  color: #0F122E;
-  font-weight: bold;
-  line-height: 1.375;
-  font-family: 'Manrope', sans-serif;
-  margin: 0 0 37px;
-}
-.popular-categories__box {
-  background: #FCFCFC;
-  border-radius: 12px;
-  padding: 80px 0 70px;
-}
-.popular-categories__wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-.popular-categories__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-weight: 600;
-  font-size: 20px;
-  color: #0F122E;
-  padding: 19px 30px 19px 30px;
-  line-height: 1.15;
-  background: #FFFFFF;
-  border: 1px solid #F6F6F9;
-  border-radius: 4px;
-  position: relative;
-  margin: 0 10px 10px;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-}
-.popular-categories__item:hover {
-  -webkit-box-shadow: 4px 12px 24px rgba(117, 126, 109, 0.05);
-          box-shadow: 4px 12px 24px rgba(117, 126, 109, 0.05);
-  text-decoration: none;
-}
-.popular-categories__link {
-  padding-left: 36px;
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  text-align: center;
-}
-.popular-categories__link::before {
-  content: "";
-  width: 24px;
-  height: 24px;
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  margin-top: -12px;
-}
-.popular-categories__item_airlines .popular-categories__link::before {
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTIyIDE2di0ybC04LjUtNVYzLjVhMS41IDEuNSAwIDEgMC0zIDBWOUwyIDE0djJsOC41LTIuNVYxOUw4IDIwLjVWMjJsNC0xIDQgMXYtMS41TDEzLjUgMTl2LTUuNUwyMiAxNnoiIGZpbGw9IiM3RTdGOTEiLz48L3N2Zz4NCg==") center no-repeat;
-}
-.popular-categories__item_airlines:hover .popular-categories__link::before {
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTIyIDE2di0ybC04LjUtNVYzLjVhMS41IDEuNSAwIDEgMC0zIDBWOUwyIDE0djJsOC41LTIuNVYxOUw4IDIwLjVWMjJsNC0xIDQgMXYtMS41TDEzLjUgMTl2LTUuNUwyMiAxNnoiIGZpbGw9IiM0Yzk0MWUiLz48L3N2Zz4=") center no-repeat;
-}
-.popular-categories__item_business .popular-categories__link::before {
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTE4IDVWM2MwLTEuMS0uOS0yLTItMmgtNGMtMS4xIDAtMiAuOS0yIDJ2Mkg3Yy0xLjEgMC0yIC45LTIgMnY5YzAgMS4xLjkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJWN2MwLTEuMS0uOS0yLTItMmgtM3ptLTIgMGgtNFYzaDR2MnpNMiA5Yy0uNTUgMC0xIC40NS0xIDF2MTBjMCAxLjEuOSAyIDIgMmgxNWMuNTUgMCAxLS40NSAxLTFzLS40NS0xLTEtMUgzVjEwYzAtLjU1LS40NS0xLTEtMXoiIGZpbGw9IiM3ZTdmOTEiLz48L3N2Zz4=") center no-repeat;
-}
-.popular-categories__item_business:hover .popular-categories__link::before {
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTE4IDVWM2MwLTEuMS0uOS0yLTItMmgtNGMtMS4xIDAtMiAuOS0yIDJ2Mkg3Yy0xLjEgMC0yIC45LTIgMnY5YzAgMS4xLjkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJWN2MwLTEuMS0uOS0yLTItMmgtM3ptLTIgMGgtNFYzaDR2MnpNMiA5Yy0uNTUgMC0xIC40NS0xIDF2MTBjMCAxLjEuOSAyIDIgMmgxNWMuNTUgMCAxLS40NSAxLTFzLS40NS0xLTEtMUgzVjEwYzAtLjU1LS40NS0xLTEtMXoiIGZpbGw9IiM0Qzk0MUUiLz48L3N2Zz4NCg==") center no-repeat;
-}
-.popular-categories__item_edication .popular-categories__link::before {
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTUgMTMuMTh2NEwxMiAyMWw3LTMuODJ2LTRMMTIgMTdsLTctMy44MnpNMTIgM0wxIDlsMTEgNiA5LTQuOTFWMTdoMlY5TDEyIDN6IiBmaWxsPSIjN2U3ZjkxIi8+PC9zdmc+") center no-repeat;
-}
-.popular-categories__item_edication:hover .popular-categories__link::before {
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTUgMTMuMTh2NEwxMiAyMWw3LTMuODJ2LTRMMTIgMTdsLTctMy44MnpNMTIgM0wxIDlsMTEgNiA5LTQuOTFWMTdoMlY5TDEyIDN6IiBmaWxsPSIjNEM5NDFFIi8+PC9zdmc+DQo=") center no-repeat;
-}
-.popular-categories__item_telecom .popular-categories__link::before {
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTIwIDJoLThDNi4zOCAyIDIgNi42NiAyIDEyLjI4IDIgMTcuNSA2LjQ5IDIyIDExLjcyIDIyIDE3LjM5IDIyIDIyIDE3LjYyIDIyIDEyVjRjMC0xLjEtLjktMi0yLTJ6bS0zIDEzbC0zLTJ2Mkg3VjloN3YybDMtMnY2eiIgZmlsbD0iIzdlN2Y5MSIvPjwvc3ZnPg==") center no-repeat;
-}
-.popular-categories__item_telecom:hover .popular-categories__link::before {
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTIwIDJoLThDNi4zOCAyIDIgNi42NiAyIDEyLjI4IDIgMTcuNSA2LjQ5IDIyIDExLjcyIDIyIDE3LjM5IDIyIDIyIDE3LjYyIDIyIDEyVjRjMC0xLjEtLjktMi0yLTJ6bS0zIDEzbC0zLTJ2Mkg3VjloN3YybDMtMnY2eiIgZmlsbD0iIzRDOTQxRSIvPjwvc3ZnPg0K") center no-repeat;
-}
+  margin: 0 0 120px; }
+  .popular-categories__title {
+    text-align: center;
+    font-size: 40px;
+    color: #0F122E;
+    font-weight: bold;
+    line-height: 1.375;
+    font-family: 'Manrope', sans-serif;
+    margin: 0 0 37px; }
+  .popular-categories__box {
+    background: #FCFCFC;
+    border-radius: 12px;
+    padding: 80px 0 70px; }
+  .popular-categories__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; }
+  .popular-categories__item {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #0F122E;
+    padding: 19px 30px 19px 30px;
+    line-height: 1.15;
+    background: #FFFFFF;
+    border: 1px solid #F6F6F9;
+    border-radius: 4px;
+    position: relative;
+    margin: 0 10px 10px;
+    transition: all .5s ease-in-out; }
+    .popular-categories__item:hover {
+      box-shadow: 4px 12px 24px rgba(117, 126, 109, 0.05);
+      text-decoration: none; }
+  .popular-categories__link {
+    padding-left: 36px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    text-align: center; }
+    .popular-categories__link::before {
+      content: "";
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      vertical-align: middle;
+      transition: all .5s ease-in-out;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      margin-top: -12px; }
+  .popular-categories__item_airlines .popular-categories__link::before {
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTIyIDE2di0ybC04LjUtNVYzLjVhMS41IDEuNSAwIDEgMC0zIDBWOUwyIDE0djJsOC41LTIuNVYxOUw4IDIwLjVWMjJsNC0xIDQgMXYtMS41TDEzLjUgMTl2LTUuNUwyMiAxNnoiIGZpbGw9IiM3RTdGOTEiLz48L3N2Zz4NCg==") center no-repeat; }
+  .popular-categories__item_airlines:hover .popular-categories__link::before {
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTIyIDE2di0ybC04LjUtNVYzLjVhMS41IDEuNSAwIDEgMC0zIDBWOUwyIDE0djJsOC41LTIuNVYxOUw4IDIwLjVWMjJsNC0xIDQgMXYtMS41TDEzLjUgMTl2LTUuNUwyMiAxNnoiIGZpbGw9IiM0Yzk0MWUiLz48L3N2Zz4=") center no-repeat; }
+  .popular-categories__item_business .popular-categories__link::before {
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTE4IDVWM2MwLTEuMS0uOS0yLTItMmgtNGMtMS4xIDAtMiAuOS0yIDJ2Mkg3Yy0xLjEgMC0yIC45LTIgMnY5YzAgMS4xLjkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJWN2MwLTEuMS0uOS0yLTItMmgtM3ptLTIgMGgtNFYzaDR2MnpNMiA5Yy0uNTUgMC0xIC40NS0xIDF2MTBjMCAxLjEuOSAyIDIgMmgxNWMuNTUgMCAxLS40NSAxLTFzLS40NS0xLTEtMUgzVjEwYzAtLjU1LS40NS0xLTEtMXoiIGZpbGw9IiM3ZTdmOTEiLz48L3N2Zz4=") center no-repeat; }
+  .popular-categories__item_business:hover .popular-categories__link::before {
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTE4IDVWM2MwLTEuMS0uOS0yLTItMmgtNGMtMS4xIDAtMiAuOS0yIDJ2Mkg3Yy0xLjEgMC0yIC45LTIgMnY5YzAgMS4xLjkgMiAyIDJoMTRjMS4xIDAgMi0uOSAyLTJWN2MwLTEuMS0uOS0yLTItMmgtM3ptLTIgMGgtNFYzaDR2MnpNMiA5Yy0uNTUgMC0xIC40NS0xIDF2MTBjMCAxLjEuOSAyIDIgMmgxNWMuNTUgMCAxLS40NSAxLTFzLS40NS0xLTEtMUgzVjEwYzAtLjU1LS40NS0xLTEtMXoiIGZpbGw9IiM0Qzk0MUUiLz48L3N2Zz4NCg==") center no-repeat; }
+  .popular-categories__item_edication .popular-categories__link::before {
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTUgMTMuMTh2NEwxMiAyMWw3LTMuODJ2LTRMMTIgMTdsLTctMy44MnpNMTIgM0wxIDlsMTEgNiA5LTQuOTFWMTdoMlY5TDEyIDN6IiBmaWxsPSIjN2U3ZjkxIi8+PC9zdmc+") center no-repeat; }
+  .popular-categories__item_edication:hover .popular-categories__link::before {
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTUgMTMuMTh2NEwxMiAyMWw3LTMuODJ2LTRMMTIgMTdsLTctMy44MnpNMTIgM0wxIDlsMTEgNiA5LTQuOTFWMTdoMlY5TDEyIDN6IiBmaWxsPSIjNEM5NDFFIi8+PC9zdmc+DQo=") center no-repeat; }
+  .popular-categories__item_telecom .popular-categories__link::before {
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTIwIDJoLThDNi4zOCAyIDIgNi42NiAyIDEyLjI4IDIgMTcuNSA2LjQ5IDIyIDExLjcyIDIyIDE3LjM5IDIyIDIyIDE3LjYyIDIyIDEyVjRjMC0xLjEtLjktMi0yLTJ6bS0zIDEzbC0zLTJ2Mkg3VjloN3YybDMtMnY2eiIgZmlsbD0iIzdlN2Y5MSIvPjwvc3ZnPg==") center no-repeat; }
+  .popular-categories__item_telecom:hover .popular-categories__link::before {
+    background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgZmlsbD0ibm9uZSI+PHBhdGggZD0iTTIwIDJoLThDNi4zOCAyIDIgNi42NiAyIDEyLjI4IDIgMTcuNSA2LjQ5IDIyIDExLjcyIDIyIDE3LjM5IDIyIDIyIDE3LjYyIDIyIDEyVjRjMC0xLjEtLjktMi0yLTJ6bS0zIDEzbC0zLTJ2Mkg3VjloN3YybDMtMnY2eiIgZmlsbD0iIzRDOTQxRSIvPjwvc3ZnPg0K") center no-repeat; }
 
 @media (max-width: 768px) {
   .popular-categories {
-    margin-bottom: 30px;
-  }
-  .popular-categories__title {
-    font-size: 32px;
-    line-height: 1.375;
-    margin-bottom: 25px;
-  }
-  .popular-categories__item {
-    font-size: 15px;
-    line-height: 1.55;
-    width: 100%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0 0 14px;
-    padding: 16px 10px 15px;
-  }
-  .popular-categories__box {
-    padding: 23px 15px 10px;
-  }
-}
+    margin-bottom: 30px; }
+    .popular-categories__title {
+      font-size: 32px;
+      line-height: 1.375;
+      margin-bottom: 25px; }
+    .popular-categories__item {
+      font-size: 15px;
+      line-height: 1.55;
+      width: 100%;
+      justify-content: center;
+      margin: 0 0 14px;
+      padding: 16px 10px 15px; }
+    .popular-categories__box {
+      padding: 23px 15px 10px; } }

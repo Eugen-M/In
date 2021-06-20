@@ -3,18 +3,14 @@
   margin: 0 auto;
   background: #ffffff;
   min-height: 100%;
-  position: relative;
-}
+  position: relative; }
 .page-container__wrap {
   max-width: 1186px;
   min-width: 320px;
   padding: 0 20px 1px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 /* media */
 @media (max-width: 767px) {
   .page-container__main {
-    background: #fff;
-  }
-}
+    background: #fff; } }
