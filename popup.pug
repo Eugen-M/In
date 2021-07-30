@@ -9,24 +9,31 @@ block styles
     link(href="styles/blocks/popup-block.css" rel="stylesheet")
 
 block scripts
-        
+    script(src="js/popup-inputs.js")
+    
 block content
     div(style="background: lightgray;")
+        br
+        
+        // sign in
         .popup-block
             .popup-block__title Sign in 
             
             .popup-block__content
-                .popup-block__wrap
-                    .popup-block__wrap-ins
-                        a.popup-block__tab.popup-block__tab_active(href="#") Sign in 
-                        a.popup-block__tab(href="#") Register
-                    
+                .popup-block__text New here? 
+                    a.popup-block__text-link(href="") Create an account.
+                        
                 form.popup-block__form(method='POST' action='')
                     .popup-block__row
-                        input.popup-block__input(type="text" placeholder="Email")
+                        .popup-block__row-wrap
+                            input.popup-block__input(type="text" data-placeholder="Email")
+                            label.popup-block__label Email
                     
-                    .popup-block__row    
-                        input.popup-block__input(type="password" placeholder="Password")
+                    .popup-block__row.popup-block__row_error
+                        .popup-block__row-wrap
+                            input.popup-block__input(type="password" data-placeholder="Password")
+                            label.popup-block__label Password
+                        .popup-block__msg.popup-block__msg_error Password is required./Password is incorrect.
                     
                         .popup-block__forgot
                             a.popup-block__forgot-link(href="") Forgot your password?
@@ -45,15 +52,70 @@ block content
                 .popup-block__buttons
                     button.popup-block__btn.popup-block__btn_google 
                         span.popup-block__btn-icon Google 
+                        
+                    button.popup-block__btn.popup-block__btn_in 
+                        span.popup-block__btn-icon LinkedIn 
                     
-                    .popup-block__buttons-wrap
-                        button.popup-block__btn.popup-block__btn_fb 
-                            span.popup-block__btn-icon Facebook
-                        button.popup-block__btn.popup-block__btn_tw 
-                            span.popup-block__btn-icon Twitter
+                    button.popup-block__btn.popup-block__btn_fb 
+                        span.popup-block__btn-icon Facebook
+                        
+                    button.popup-block__btn.popup-block__btn_tw 
+                        span.popup-block__btn-icon Twitter
                         
             .popup-block__btn.popup-block__btn_close
             
+        br
+        // sign in
+        .popup-block
+            .popup-block__title Sign in 
+            
+            .popup-block__content
+                .popup-block__wrap
+                    .popup-block__wrap-ins
+                        a.popup-block__tab.popup-block__tab_active(href="#") Sign in 
+                        a.popup-block__tab(href="#") Register
+                    
+                form.popup-block__form(method='POST' action='')
+                    .popup-block__row
+                        input.popup-block__input(type="text" placeholder="")
+                        label.popup-block__label Email
+                    
+                    .popup-block__row
+                        input.popup-block__input(type="password" placeholder="")
+                        label.popup-block__label Password
+                        .popup-block__msg.popup-block__msg_error Password is required./Password is incorrect.
+                    
+                        .popup-block__forgot
+                            a.popup-block__forgot-link(href="") Forgot your password?
+                    
+                    .check-item
+                        label.check-item__label
+                            input.check-item__input(type="checkbox" id="ch")
+                            span.check-item__dot
+                            span.check-item__name Remember this device 
+                                
+                    button.popup-block__btn.popup-block__btn_submit(type="submit") Sign in 
+                    
+                .popup-block__sep
+                    span.popup-block__sep-text or sign in with 
+                    
+                .popup-block__buttons
+                    button.popup-block__btn.popup-block__btn_google 
+                        span.popup-block__btn-icon Google 
+                        
+                    button.popup-block__btn.popup-block__btn_in 
+                        span.popup-block__btn-icon LinkedIn 
+                    
+                    button.popup-block__btn.popup-block__btn_fb 
+                        span.popup-block__btn-icon Facebook
+                        
+                    button.popup-block__btn.popup-block__btn_tw 
+                        span.popup-block__btn-icon Twitter
+                        
+            .popup-block__btn.popup-block__btn_close
+        
+        br  
+        // register
         .popup-block
             .popup-block__title Register 
             
@@ -72,6 +134,9 @@ block content
                         
                     .popup-block__row
                         input.popup-block__input(type="password" placeholder="Password")
+                        
+                    .popup-block__captcha
+                        img.popup-block__captcha-img(src="i/captcha.png" alt="")
                     
                     .check-item
                         label.check-item__label
@@ -85,16 +150,121 @@ block content
                     button.popup-block__btn.popup-block__btn_submit(type="submit") Register
                     
                 .popup-block__sep
-                    span.popup-block__sep-text or sign in with 
+                    span.popup-block__sep-text or register with 
                     
                 .popup-block__buttons
                     button.popup-block__btn.popup-block__btn_google 
                         span.popup-block__btn-icon Google 
+                        
+                    button.popup-block__btn.popup-block__btn_in 
+                        span.popup-block__btn-icon LinkedIn 
                     
-                    .popup-block__buttons-wrap
-                        button.popup-block__btn.popup-block__btn_fb 
-                            span.popup-block__btn-icon Facebook
-                        button.popup-block__btn.popup-block__btn_tw 
-                            span.popup-block__btn-icon Twitter
+                    button.popup-block__btn.popup-block__btn_fb 
+                        span.popup-block__btn-icon Facebook
+                        
+                    button.popup-block__btn.popup-block__btn_tw 
+                        span.popup-block__btn-icon Twitter
                         
             .popup-block__btn.popup-block__btn_close
+        
+        br  
+        // sign up
+        .popup-block
+            .popup-block__title Sign up  
+            
+            .popup-block__content
+                .popup-block__text Alreadry have an account? 
+                    a.popup-block__text-link(href="") Sign in
+                    |.
+                    
+                form.popup-block__form(method='POST' action='')
+                    .popup-block__row
+                        input.popup-block__input(type="text" placeholder="Email")
+                        
+                    .popup-block__row
+                        input.popup-block__input(type="text" placeholder="Display Name")
+                        
+                    .popup-block__row
+                        input.popup-block__input(type="password" placeholder="Password")
+                        
+                    .popup-block__captcha
+                        img.popup-block__captcha-img(src="i/captcha.png" alt="")
+                    
+                    .check-item
+                        label.check-item__label
+                            input.check-item__input(type="checkbox" id="ch1")
+                            span.check-item__dot
+                            span.check-item__name By clicking sign up you are agreeing to our   
+                                a.check-item__link(href="#") Terms of Use 
+                                | and 
+                                a.check-item__link(href="#") Privacy Policy
+                                
+                    button.popup-block__btn.popup-block__btn_submit(type="submit") Sign up 
+                    
+                .popup-block__sep
+                    span.popup-block__sep-text or sign up with 
+                    
+                .popup-block__buttons
+                    button.popup-block__btn.popup-block__btn_google 
+                        span.popup-block__btn-icon Google 
+                        
+                    button.popup-block__btn.popup-block__btn_in 
+                        span.popup-block__btn-icon LinkedIn 
+                    
+                    button.popup-block__btn.popup-block__btn_fb 
+                        span.popup-block__btn-icon Facebook
+                        
+                    button.popup-block__btn.popup-block__btn_tw 
+                        span.popup-block__btn-icon Twitter
+                        
+            .popup-block__btn.popup-block__btn_close
+        
+        br 
+        // loader    
+        .popup-block
+            .popup-block__loader
+                .popup-block__loader-ins
+                    .popup-block__loader-item
+                    .popup-block__loader-item
+                    .popup-block__loader-item
+                    .popup-block__loader-item
+                    
+        br  
+        // reset password
+        .popup-block
+            .popup-block__title Reset password  
+            
+            .popup-block__content
+                .popup-block__text.popup-block__text_center Enter your registered email below to receive password reset instruction 
+                    
+                form.popup-block__form(method='POST' action='')
+                    .popup-block__row
+                        input.popup-block__input(type="text" placeholder="Email")
+                                
+                    button.popup-block__btn.popup-block__btn_submit(type="submit") Reset 
+                    
+                ul.popup-block__list
+                    li.popup-block__list-item
+                        a.popup-block__list-link(href="") Login
+                    li.popup-block__list-item
+                        a.popup-block__list-link(href="") Create new account 
+                        
+            .popup-block__btn.popup-block__btn_close
+            
+        br  
+        // reset password
+        .popup-block
+            .popup-block__subtitle Login by Facebook account  
+            
+            .popup-block__content
+                form.popup-block__form(method='POST' action='')
+                    .popup-block__row
+                        .popup-block__row-wrap
+                            input.popup-block__input(type="text" data-placeholder="Display Name")
+                            label.popup-block__label Display Name
+                                
+                    button.popup-block__btn.popup-block__btn_submit(type="submit") Log in  
+                    
+            .popup-block__btn.popup-block__btn_close
+            
+        br 
