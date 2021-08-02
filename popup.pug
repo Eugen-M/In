@@ -77,20 +77,21 @@ block content
                     
                 form.popup-block__form(method='POST' action='')
                     .popup-block__row
-                        input.popup-block__input(type="text" placeholder="")
-                        label.popup-block__label Email
+                        .popup-block__row-wrap
+                            input.popup-block__input(type="text" data-placeholder="Email")
+                            label.popup-block__label Email
                     
                     .popup-block__row
-                        input.popup-block__input(type="password" placeholder="")
-                        label.popup-block__label Password
-                        .popup-block__msg.popup-block__msg_error Password is required./Password is incorrect.
+                        .popup-block__row-wrap
+                            input.popup-block__input(type="password" data-placeholder="Password")
+                            label.popup-block__label Password
                     
                         .popup-block__forgot
                             a.popup-block__forgot-link(href="") Forgot your password?
                     
                     .check-item
                         label.check-item__label
-                            input.check-item__input(type="checkbox" id="ch")
+                            input.check-item__input(type="checkbox" id="ch1")
                             span.check-item__dot
                             span.check-item__name Remember this device 
                                 
@@ -127,20 +128,26 @@ block content
                     
                 form.popup-block__form(method='POST' action='')
                     .popup-block__row
-                        input.popup-block__input(type="text" placeholder="Email")
+                        .popup-block__row-wrap
+                            input.popup-block__input(type="text" data-placeholder="Email")
+                            label.popup-block__label Email
                         
                     .popup-block__row
-                        input.popup-block__input(type="text" placeholder="Display Name")
+                        .popup-block__row-wrap
+                            input.popup-block__input(type="text" data-placeholder="Display Name")
+                            label.popup-block__label Display Name
                         
                     .popup-block__row
-                        input.popup-block__input(type="password" placeholder="Password")
+                        .popup-block__row-wrap
+                            input.popup-block__input(type="password" data-placeholder="Password")
+                            label.popup-block__label Password
                         
                     .popup-block__captcha
                         img.popup-block__captcha-img(src="i/captcha.png" alt="")
                     
                     .check-item
                         label.check-item__label
-                            input.check-item__input(type="checkbox" id="ch1")
+                            input.check-item__input(type="checkbox" id="ch2")
                             span.check-item__dot
                             span.check-item__name By clicking sign up you are agreeing to our   
                                 a.check-item__link(href="#") Terms of Use 
@@ -179,20 +186,26 @@ block content
                     
                 form.popup-block__form(method='POST' action='')
                     .popup-block__row
-                        input.popup-block__input(type="text" placeholder="Email")
+                        .popup-block__row-wrap
+                            input.popup-block__input(type="text" data-placeholder="Email")
+                            label.popup-block__label Email
                         
                     .popup-block__row
-                        input.popup-block__input(type="text" placeholder="Display Name")
+                        .popup-block__row-wrap
+                            input.popup-block__input(type="text" data-placeholder="Display Name")
+                            label.popup-block__label Display Name
                         
                     .popup-block__row
-                        input.popup-block__input(type="password" placeholder="Password")
+                        .popup-block__row-wrap
+                            input.popup-block__input(type="password" data-placeholder="Password")
+                            label.popup-block__label Password
                         
                     .popup-block__captcha
                         img.popup-block__captcha-img(src="i/captcha.png" alt="")
                     
                     .check-item
                         label.check-item__label
-                            input.check-item__input(type="checkbox" id="ch1")
+                            input.check-item__input(type="checkbox" id="ch3")
                             span.check-item__dot
                             span.check-item__name By clicking sign up you are agreeing to our   
                                 a.check-item__link(href="#") Terms of Use 
@@ -239,7 +252,9 @@ block content
                     
                 form.popup-block__form(method='POST' action='')
                     .popup-block__row
-                        input.popup-block__input(type="text" placeholder="Email")
+                        .popup-block__row-wrap
+                            input.popup-block__input(type="text" data-placeholder="Email")
+                            label.popup-block__label Email
                                 
                     button.popup-block__btn.popup-block__btn_submit(type="submit") Reset 
                     

@@ -452,59 +452,59 @@
         &__subtitle {
             font-size: 15px;
         }
-        
-        &__text {
-            font-size: 7px;
-        }
-        
-        &__input {
-            height: 25px;
-        }
-        
-        &__tab {
-            font-size: 6px;
-        }
-        
-        &__forgot-link {
-            font-size: 6px;
-        }
-        
-        .check-item__name,
-        .check-item__link {
-            font-size: 7px;
-        }
-        
-        &__sep {
-            &-text {
-                font-size: 6px;
-            }
-        }
-        
+        // 
+        // &__text {
+        //     font-size: 7px;
+        // }
+        // 
+        // &__input {
+        //     height: 25px;
+        // }
+        // 
+        // &__tab {
+        //     font-size: 6px;
+        // }
+        // 
+        // &__forgot-link {
+        //     font-size: 6px;
+        // }
+        // 
+        // .check-item__name,
+        // .check-item__link {
+        //     font-size: 7px;
+        // }
+        // 
+        // &__sep {
+        //     &-text {
+        //         font-size: 6px;
+        //     }
+        // }
+        // 
         &__btn {
             &_submit {
                 line-height: 1.2;
                 font-size: 12px;
             }
-            
-            &_google,
-            &_fb,
-            &_tw,
-            &_in {
-                padding: 4px;
-                font-size: 7px;
-            }
-            
-            &_google &-icon,
-            &_fb &-icon,
-            &_tw &-icon,
-            &_in &-icon {
-                &::before {
-                    height: 12px;
-                    width: 12px;
-                    margin-top: -6px;
-                    background-size: auto 100%;
-                }
-            }
+        
+            // &_google,
+            // &_fb,
+            // &_tw,
+            // &_in {
+            //     padding: 4px;
+            //     font-size: 7px;
+            // }
+            // 
+            // &_google &-icon,
+            // &_fb &-icon,
+            // &_tw &-icon,
+            // &_in &-icon {
+            //     &::before {
+            //         height: 12px;
+            //         width: 12px;
+            //         margin-top: -6px;
+            //         background-size: auto 100%;
+            //     }
+            // }
         }
 
         &__buttons-wrap {

@@ -314,30 +314,9 @@
       font-size: 20px; }
     .popup-block__subtitle {
       font-size: 15px; }
-    .popup-block__text {
-      font-size: 7px; }
-    .popup-block__input {
-      height: 25px; }
-    .popup-block__tab {
-      font-size: 6px; }
-    .popup-block__forgot-link {
-      font-size: 6px; }
-    .popup-block .check-item__name,
-    .popup-block .check-item__link {
-      font-size: 7px; }
-    .popup-block__sep-text {
-      font-size: 6px; }
     .popup-block__btn_submit {
       line-height: 1.2;
       font-size: 12px; }
-    .popup-block__btn_google, .popup-block__btn_fb, .popup-block__btn_tw, .popup-block__btn_in {
-      padding: 4px;
-      font-size: 7px; }
-    .popup-block__btn_google .popup-block__btn-icon::before, .popup-block__btn_fb .popup-block__btn-icon::before, .popup-block__btn_tw .popup-block__btn-icon::before, .popup-block__btn_in .popup-block__btn-icon::before {
-      height: 12px;
-      width: 12px;
-      margin-top: -6px;
-      background-size: auto 100%; }
     .popup-block__buttons-wrap {
       flex-wrap: wrap; }
     .popup-block__buttons-wrap .popup-block__btn {

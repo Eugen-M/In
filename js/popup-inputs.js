@@ -11,7 +11,7 @@ const FloatLabel = (() => {
   const handleBlur = (e) => {
     const target = e.target;
     if(!target.value) {
-      target.parentNode.classList.remove('active');
+      target.parentNode.classList.remove('popup-block__row-wrap_active');
     }
     target.removeAttribute('placeholder');    
   };  
