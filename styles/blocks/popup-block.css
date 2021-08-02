@@ -317,6 +317,10 @@
     .popup-block__btn_submit {
       line-height: 1.2;
       font-size: 12px; }
+    .popup-block__btn_close {
+      width: 20px;
+      height: 20px;
+      background-size: auto 16px; }
     .popup-block__buttons-wrap {
       flex-wrap: wrap; }
     .popup-block__buttons-wrap .popup-block__btn {
